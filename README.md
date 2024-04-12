@@ -14,4 +14,13 @@ El tercero recibe los parámetros id, nombre y apellidos y actualiza el registro
 El último método sigue la misma lógica que el de añadir actores.
 
 En el repositorio definimos la lógica para método.
-Pero primero almacenamos en una variable la ruta del JSON
+Pero primero almacenamos en una constante la ruta del JSON
+
+GetActorsFromFile se encarga de leer el archivo json y guardarlo en una variable
+UpdateActores se encarga de acceder al archivo y guardar cambios.
+GetActors se encarga de almacenar y formatear el JSON en una variable.
+AddActor tiene como parámetro el actor. Se almacena en una variable los actores y se busca por id el actor. Si no está se lanza la excepción.
+Si esta, se llama a UpdateActores.
+DeleteActor sigue la misma lógica que AddActor utilizando Remove.
+GetActorById tiene como parámetro el id que es entero. Si se encuentra devuelve actor que se define para encontrar el objeto.
+UpdateActor sigue la misma lógica que GetActorById.
